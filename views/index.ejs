@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countries around the world</title>
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Search🔍 for your desired c🌍untry below👇</h1>
+        <div class="result-screen"> 
+            <h3>Country: <span><%= result.countryName %></span> </h3>
+            <h3>Capital: <span><%= result.countryCapital %></span> </h3>
+            <h3>Continent: <span><%= result.countryRegion %></span> </h3>
+            <h3>Population: <span><%= result.countryPopulation%></span> </h3>
+        </div>
+        <div class="search-box">
+            <form action="/country" method="post">
+                <label for="country">Country</label>
+                <input type="text" name="country" id="" required>
+                <button type="submit" class="search-country">Seach By Country</button>
+            </form>
+        </div>
+        <div class="search-box">
+            <form action="/capital" method="post">
+                <label for="capital">Capital</label>
+                <input type="text" name="capital" id="" required>
+                <button type="submit" class="search-capital">Seach By Capital</button>
+            </form>
+        </div>
+        <div class="search-box">
+            <form action="/currency" method="post">
+                <label for="currency">Currency</label>
+                <input type="text" name="currency" id="" required>
+                <button type="submit" class="search-currency">Seach By Currency</button>
+            </form>
+        </div>
+    </div>
+    <div class="dark-cover"></div>
+</body>
+
+</html>
